@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useCallback, useEffect } from "react";
 import "./User.css";
 import axios from "axios";
 import UserFooter from "./UserFooter";
@@ -31,13 +31,13 @@ export default function User() {
     }
   };
 
-  const handelUserData = (data, startIdx, endIdx) => {
+  const handelUserData = useCallback((data, startIdx, endIdx) => {
     setPageData(data.slice(startIdx, endIdx));
-  };
+  }, []);
 
   const modifiedDataAfterDelete = () => {
     let apiData = JSON.parse(localStorage.getItem("Data"));
-    console.log(isMarked);
+    // console.log(isMarked);
     isMarked.forEach((val1) => {
       let index = apiData.findIndex((val2) => val1 === val2.id);
       apiData.splice(index, 1);
