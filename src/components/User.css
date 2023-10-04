@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+.searchBar {
+  width: 95vw;
+  height: 25px;
+  margin: 10px;
+}
+.table {
+  width: 95vw;
+  margin: auto;
+  border-collapse: collapse;
+}
+.table-row {
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+.data_table_row {
+  border-bottom: 1px solid rgb(198, 192, 192);
+  font-family: "Quicksand", sans-serif;
+}
+
+th {
+  padding-bottom: 0.5rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.not_found {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block: 2rem;
+  width: 100vw;
+  font-size: large;
+}

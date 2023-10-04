@@ -1,0 +1,17 @@
+.footer {
+  margin-top: 1rem;
+  display: flex;
+  position: relative;
+}
+.pageCount {
+  position: absolute;
+  left: 45vw;
+}
+
+.deleteButton {
+  background-color: red !important;
+  font-size: 0.5rem !important;
+}
+.deleteButton:hover {
+  background-color: rgb(233, 51, 51) !important;
+}
